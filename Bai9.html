@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      h2 {
+        color: #555;
+      }
+      .progress-container {
+        width: 50%;
+        height: 30px;
+        background-color: #eee;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px auto;
+        position: relative;
+      }
+      .progress-bar {
+        height: 100%;
+        width: 0%;
+        background-color: rgba(0, 128, 0, 0.2);
+        transition: width 0.3s ease, background-color 0.3s ease;
+      }
+      .btn {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: #64b5f6;
+        color: white;
+        border-radius: 5px;
+      }
+      .btn:disabled {
+        background-color: #bbdefb;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Progress Bar with Background Effect</h2>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <button class="btn" onclick="changeProgress(10)">Tăng tiến trình</button>
+    <button class="btn" onclick="changeProgress(-10)">Giảm tiến trình</button>
+
+    <script src="./Bai9.js"></script>
+  </body>
+</html>
