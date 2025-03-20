@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #text {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .increase {
+            background-color: green;
+        }
+
+        .decrease {
+            background-color: red;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">Chữ sẽ thay đổi kích thước khi bấm nút</p>
+    <button class="btn increase" onclick="changeSize(2)">+</button>
+    <button class="btn decrease" onclick="changeSize(-2)">-</button>
+    <script src="./Bai6.js"></script>
+</body>
+</html>
